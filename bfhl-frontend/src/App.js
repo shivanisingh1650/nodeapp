@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const API_URL = "https://nodeapp-qup9.onrender.com"; // Replace with your actual Render API URL
+const API_URL = process.env.REACT_APP_API_URL;
 
 function App() {
   const [jsonInput, setJsonInput] = useState("");
